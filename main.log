@@ -1,0 +1,18 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdftex 2017.11.17)  14 DEC 2017 14:28
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+./main.tex:9: Undefined control sequence.
+l.9 \documentclass
+                  [10pt,a4paper,sans]{moderncv}        % possible options in...
+
+? 
+./main.tex:9: Emergency stop.
+l.9 \documentclass
+                  [10pt,a4paper,sans]{moderncv}        % possible options in...
+End of file on the terminal!
+
+./main.tex:9:  ==> Fatal error occurred, no output PDF file produced!

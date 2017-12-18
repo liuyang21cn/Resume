@@ -1,0 +1,277 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.9]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\usepackage{fontspec}
+\usepackage{fontawesome}
+
+% personal data
+\name{Yang}{Liu, Ph.D.}
+% \quote{\normalfont Machine Learning Scientist combining strong quantitative research background with solid hands on coding skills}
+\quote{\normalfont Machine learning scientist with strong mathematical research background and hands-on project experiences}
+%Machine Learning Scientist with strong mathematical research background, project experience & hands-on coding skills
+
+%Applied scientist with strong background in mathematics and programming}
+% \title{Ph.D.}                               % optional, remove / comment the line if not wanted
+\address{Dallas, TX}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+% \extrainfo{Dallas, TX, 75206}
+\phone[mobile]{+1~(817)~247~3973}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{Yang@smu.edu}                               % optional, remove / comment the line if not wanted
+% \homepage{www.linkedin.com/in/yangliusmu}  
+% \text{Dallas, TX, 76206}{}{}
+\extrainfo{%
+\httplink[\faLinkedin]{www.linkedin.com/in/yangliusmu}
+  \maketitlesymbol
+  \httplink[\faGithub]{www.github.com/liuyang21cn}
+  }
+% \homepage{https://github.com/liuyang21cn}% optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+% \vspace{-3cm}
+\makecvtitle
+\vspace{-1.2cm}
+% \section{Objective}
+% Current PhD candidate in applied mathematics looking for full-time job in the quantitative field starting from June 2017
+% Ph.D. candidate in applied mathematics looking for full-time job starting from August 2017
+% \vspace{-0.3cm}
+
+% -----------------Skills---------------------
+\section{Skills}
+% \cvitem{Numerical Skills}{Linear Algebra, Differential Equations, Numerical Analysis, Iterative Methods, Multigrid Methods}
+% \cvitem{Programming}{Python, Machine Learning, Matlab, Spark, Fortran 90, Parallel Computing(MPI, OpenMP), C++, MySQL, Latex}
+
+% \cvitem{Numerical Skills}{Linear Algebra, Differential Equations, Numerical Analysis, Iterative Methods, Multigrid Methods}
+
+\cvitem{Modeling}{Linear Algebra, Calculus, Differential Equations, Statistical Inference, Bayesian Statistics, Time Series, A/B Test}
+\cvitem{Programming}{Python, SQL, C++, Matlab, Git, Fortran 90, LaTeX, R}
+\cvitem{Machine Learning}{Linear/Logistic Regression, DNN, CNN, AI, Decision Trees, K-means, KNN, Naive Bayes, SVM}
+\cvitem{Packages}{Pandas, NumPy, SciPy, Scikit-Learn, Matplotlib, Seaborn, Hadoop, Spark, TensorFlow, MPI, OpenMP}
+
+% \cvitem{Packages}{Pandas, NumPy, SciPy, Scikit-Learn, Hadoop, Spark, TensorFlow, MPI, OpenMP}
+
+% -----------------Education-----------------
+\vspace{-.3cm}
+\section{Education}
+
+\cventry{}{}{Southern Methodist University  \normalfont-- Applied Mathematics, Ph.D., GPA 3.7}{\normalfont May 2017}{}{\vspace{-.45cm}
+\begin{itemize}
+\item Relevant Courses: Numerical Differential Equations, Computational Fluid Dynamics, Multigrid Methods
+\item Publication: The Immersed Interface Method for Non-Smooth Rigid Objects in a 2D Incompressible Viscous Flow, Journal of Computational Physics, submitted for review
+\item Society for Industrial and Applied Mathematics UTD-SMU Joint Student Chapter, Secretary
+\end{itemize}}  
+
+\vspace{-0.1cm}
+
+\cventry{}{}{Udacity \normalfont-- Artificial Intelligence Nanodegree}{\normalfont Present\vspace{-.45cm}}{}{
+\begin{itemize}
+\item Relevant Courses: Classical and Advanced Search, Adversarial Search, Constraint Satisfaction Problems, Logic and Reasoning, Planning
+\end{itemize}
+}  
+
+\vspace{-0.1cm}
+
+\cventry{}{}{Coursera \normalfont-- Deep Learning Specialization, Machine Learning Specialization}{\vspace{-.45cm}}{}{
+\begin{itemize}
+\item Relevant Courses: DNN, CNN, Regularization, Linear/Logistic Regression, Decision Tree, K-means, KNN, Mixture Models
+\end{itemize}
+}  
+
+\vspace{-0.1cm}
+
+\cventry{}{}{Southern Methodist University  \normalfont-- Applied Mathematics, M.S.}{\normalfont May 2014\vspace{-.45cm}}{}{
+\begin{itemize}
+\item Relevant Courses: Numerical Analysis, Linear Algebra, Parallel Computing, Iterative Methods, Differential Equations
+\end{itemize}
+}
+
+% \vspace{-0.05cm}
+
+\cventry{}{}{University of Texas at Arlington \normalfont-- Applied Mathematics, B.S., GPA 3.6, Cum Laude}{\normalfont May 2012}{}{}
+\vspace{-.45cm}
+
+
+% --------------Project--------------------------
+\vspace{-0.3cm}
+\section{Projects}
+\vspace{-.45cm}
+\cventry{}{\normalfont Identifying Safe Loans With Decision Trees}{}{}{}{
+\begin{itemize}
+\item Trained a boosted ensemble of decision-trees to predict whether a loan will default based on data from LendingClub
+\item Implemented weighted decision tree, best feature split and Adaboost techniques
+\item Avoided over-fitting of the model and achieved 70\% accuracy on predictions of test data
+\end{itemize}
+}
+\vspace{-.45cm}
+\cventry{}{\normalfont Deep Neural Network for Cat Image Classification}{}{}{}{
+\begin{itemize}
+\item Built and applied deep neural network based on "Cat vs non-Cat" dataset to identify cat images
+\item Developed 2-layer and L-layer deep neural network models with forward/backward propagation techniques
+\item Achieved 80\% test accuracy on L-layer neural network
+\end{itemize}
+}
+\vspace{-.4cm}
+\cventry{}{\normalfont Isolation Game AI Agent Player}{}{}{}{
+\begin{itemize}
+\item Developed an adversarial search AI player agent to play the "Isolation" game
+\item Implemented the iterative deepening, Minimax, and Alpha-Beta pruning methods and designed customized evaluation functions
+\item Kept 70\% average winning rate  
+\end{itemize}}
+% \vspace{-.45cm}
+% \cventry{}{\normalfont Parallel Scientific Computing Course}{}{}{}{
+% \begin{itemize}%
+% \item Developed and implemented linear system multigrid solver for 2D heat equation using C++
+% \item Extended the MG solver for distributed-memory parallel computing with MPI and OpenMP
+% \item Resulted in good accuracy and significant computational time reduction
+% \end{itemize}
+% Numerical Solution of Ordinary Differential Equations(\href{https://github.com/liuyang21cn/Numerical_ODE_Multirate_Project}{Git link})
+% \begin{itemize}%
+% \item Investigated higher-order accurate multirate methods for systems of initial value problems
+% \item Developed and implemented two different multirate partitioned Runge Kutta Methods using C++
+% % \item Resulted in expected accuracy and efficiency 
+% \end{itemize}
+% }
+
+% -------------------Work----------------------------
+\vspace{-0.3cm}
+\section{Experience}
+\cventry{2014.01--2017.05}{\textbf{Ph.D. Research Assistant}}{Southern Methodist University}{Dallas, TX}{}{
+\begin{itemize}
+\item Developed the Immersed Interface Method to simulate fluid flows around multiple smooth or non-smooth complex objects with second-order accuracy and applied the method to investigate a variety fluid-solid interaction problems, including aerodynamics of insect flight
+\item Built the theoretical math model, designed the data structures and parallelization strategies, wrote Fortran 90 codes from scratch to implement the method for distributed memory high-performance parallel computing with MPI and \emph{Hypre} parallel linear solver package
+\item Substantial tests and simulations showed the method is stable and robust for any shape of objects, extra computational cost for additional object is linear to number of vertices, 90\% of overall parallel speedup and efficiency is dependent on \emph{Hypre} package
+% \item Ph.D. Dissertation: "The Immersed Interface Method For Flow Around Non-Smooth Boundaries And Its Parallelization"
+% \item Presentations:
+% \begin{itemize}
+%     \item APS-DFD meeting, Boston, MA: The Immersed Interface Method for Non-smooth Objects in 2D Incompressible Viscous Flow
+%     \item International Workshop on Fluid-Structure Interactions, Singapore: The Immersed Interface Method for Flow Around Non-smooth Boundaries
+%     \item The Bluebonnet Symposium on Thermal-Fluid Sciences, Dallas: The Immersed Interface Method for Flow Around Non-smooth Boundaries and Its Parallelization
+% \end{itemize}
+% \item Publication: The Immersed Interface Method for Non-Smooth Rigid Objects in a 2D Incompressible Viscous Flow, Journal of Computational Physics, submitted for review
+\end{itemize}
+}
+\vspace{-0.4cm}
+\cventry{2016.08--2016.12}{\textbf{Lecturer}}{}{}{}{
+\begin{itemize}%
+\item Taught Calculus I adeptly in a diverse class with 37 students of differing ability, background, and ethnicity 
+\item Designed syllabus, 5 chapters of lecture notes, 4 tests, and homework problems
+\item 70\% of the students' overall grade are above 80\%
+\end{itemize}
+}
+
+% \vspace{-0.5cm}
+\vspace{-0.4cm}
+\cventry{2012.08--2014.12}{\textbf{Teaching Assistant}}{}{}{}{
+% Assisted faculties in undergraduate-level courses
+\begin{itemize}%
+\item Assisted faculties in undergraduate-level courses
+\item Graded homework, quizzes and projects for 7 courses including calculus, linear algebra and scientific computing; Instructed about 90 to 110 students in scientific computing labs and provided assistance with course contents in help sessions
+\item Students have more than 10\% improvement on their projects and exams
+\end{itemize}
+}
+
+% \vspace{-0.1cm}
+\cventry{2011.06--2011.08}{Research Assistant}{Chinese Academy of Sciences}{Beijing, China}{Summer Workshop}{
+\begin{itemize}
+\item Designed new sample survey strategy and data analysis method to examine the local elementary education quality
+\item Collected samples from 25 elementary schools for further research
+\end{itemize}
+}
+
+% ---------------------Training-----------------------
+% \vspace{-0.2cm}
+% \section{Certifications \& Training}
+% \cvitem{Udacity}{Artificial Intelligence Nanodegree, in progress, starts from Aug 31 2017}
+% \cvitem{Coursera Course Certifications}{Deep Learning Specialization by Andrew Ng, 3 out of 5 courses finished}
+% \cvitem{Coursera Course Certifications}{Machine Learning Specialization, University of Washington on Coursera}
+% \cvitem{Dataquest.io}{Data Scientist Path}
+
+% --------------------Activities---------------------
+
+% \vspace{-.2cm}
+% \section{Publication}
+% \cvlistitem{Y. Liu, S. Xu, The Immersed Interface Method for Non-Smooth Rigid Objects in a 2D Incompressible Viscous Flow, Journal of Computational Physics, submitted for review}
+
+% \vspace{-0.2cm}
+% \section{Activities}
+% \cvitem{Society for Industrial and Applied Mathematics UTD-SMU Joint Student Chapter}{Secretary}
+
+
+% % \vspace{-0.1cm}
+% % Organized seminars and students' activities
+
+% % \vspace{0.1cm}
+% \cvitem{USTB Free Film Club}{Photographer}
+% % \vspace{-0.1cm}
+% % Organized photography activities, recorded and took charge of post-production of school events
+% % \vspace{0.1cm}
+
+% % \begin{itemize}
+% %     \item Organized several photography saloons and provided good opportunities for students to learn more about photographic art
+% %     \item Recorded and took charge of post-production of several college major events
+% % \end{itemize}
+% % \vspace{0.1cm}
+% \cvitem{USTB College of Science Student Association}{Department Director}\vspace{-0.1cm}
+% Organized volunteer activities, worked with undergraduate adviser to hold school events, liaison work with other universities
+% \begin{itemize}
+%     \item Managed USTB College of Science Young Volunteers Association, organized several successful activities, increased number of volunteers and provided more help to people in need
+%     \item Worked with undergraduate advisor and other student association departments to hold several school events and activities
+%     \item Assisted with other universities’ student activities
+% \end{itemize}
+% \section{Interests}
+% \cvitem{hobby 1}{Description}
+% \cvitem{hobby 2}{Description}
+% \cvitem{hobby 3}{Description}
+
+
+% \cvlistitem{Item 2}
+% \cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+% \section{Extra 2}
+% \cvlistdoubleitem{Item 1}{Item 4}
+% \cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+% \cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+
+\end{document}
+
+
+% %% end of file `template.tex'.
